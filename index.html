@@ -34,6 +34,17 @@
 	<![endif]-->
 
 </head>
+<style>
+
+.intro-video-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;  /* Ensure full viewport width */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+</style>
 <body>
 	<!-- Page Preloder -->
 	<!-- <div id="preloder">
@@ -66,16 +77,32 @@
 		</div>
 	</header>
 	<!-- Header section end -->
+
 	<!-- Intro section -->
-	<section class="intro-video-section set-bg d-flex align-items-end " data-setbg="./img/promo-bg.jpg">
-		<a href="https://www.youtube.com/watch?v=2OLGFz23qmA" class="video-play-btn video-popup"><img src="img/icons/solid-right-arrow.png" alt="#"></a>
+	<section class="intro-video-section d-flex align-items-end" style="margin-top: 100px;">
+		<video id="introVideo" src="vid/Arcade Game Intro After Effects Templates.mp4" autoplay muted loop></video>
+ 
+		<!-- <a href="#" class="video-play-btn video-popup"><img src="img/icons/solid-right-arrow.png" alt="Play Video"></a> -->
+		<div class="container">
+		  <div class="video-text">
+			<h2>Promo video of the game</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+		  </div>
+		</div>
+	  </section>
+	<!-- <section class="intro-video-section set-bg d-flex align-items-end ">
+		
+		<a href="#" class="video-play-btn video-popup"><img src="img/icons/solid-right-arrow.png" alt="#"></a>
+		  
+		<iframe id="targetIframe" src="vid/Arcade Game Intro After Effects Templates.mp4?autoplay=1&mute=1" title="description" class="video-play-btn video-popup" style="display: none;"></iframe>
+
 		<div class="container">
 			<div class="video-text">
 				<h2>Promo video of the game</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Intro section end -->
 
 	<!-- Hero section -->
@@ -114,8 +141,6 @@
 		</div>
 	</footer>
 	<!-- Footer section end -->
-
-
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
